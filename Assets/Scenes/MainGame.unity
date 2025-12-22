@@ -461,6 +461,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d610f6677a52c840a43c84628704ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &525469259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 525469261}
+  - component: {fileID: 525469260}
+  m_Layer: 0
+  m_Name: ResourceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &525469260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525469259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c0767881ea04a4da51027856b3c95a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dontDestroyOnLoad: 1
+  StoneGreen: 0
+  StoneGreen_Text: {fileID: 1213874814}
+--- !u!4 &525469261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525469259}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &599131691
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,12 +542,14 @@ MonoBehaviour:
   - {fileID: 6353217298838746350, guid: 603700c238443e94b8be58a8c8fddaa8, type: 3}
   - {fileID: 9054335969349304321, guid: 23c494efab6672546a185a73eebfae3d, type: 3}
   - {fileID: 3153252860144183624, guid: 22a53e6d39e11cc418bed7551a219e95, type: 3}
+  - {fileID: 4372246290413378837, guid: 0f95515b3729ac945a6776b64f359a1f, type: 3}
   levelParent: {fileID: 599131693}
   currentLevelIndex: 0
   CountBowHit: 0
   CountAppleHit: 0
   remainingArrows: 0
   TextTaget_HitBow: {fileID: 740763793}
+  TextTaget_HitApple: {fileID: 1975409764}
   TextCountArrow: {fileID: 1006835110}
   Level_Text: {fileID: 1424481343}
 --- !u!4 &599131693
@@ -2343,3 +2392,4 @@ SceneRoots:
   - {fileID: 1277170215}
   - {fileID: 119646354}
   - {fileID: 599131693}
+  - {fileID: 525469261}

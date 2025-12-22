@@ -50,7 +50,7 @@ public class Arrow : MonoBehaviour
             LevelManager.Instance.remainingArrows--;
             StickToWood(collision.transform);
             LevelManager.Instance.CountBowHit++;
-            LevelManager.Instance.UpdateTargetText();
+            LevelManager.Instance.UpdateTargetArrowText();
 
         }
         else if (collision.gameObject.CompareTag("Arrow"))

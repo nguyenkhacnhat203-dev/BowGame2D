@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5510901312278578620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.94208, y: 133.6}
-  m_SizeDelta: {x: 179.07, y: 78.27}
+  m_AnchorMin: {x: 0.21018554, y: 0.76000005}
+  m_AnchorMax: {x: 0.78381455, y: 0.9834531}
+  m_AnchoredPosition: {x: 0.057922363, y: -0.39997864}
+  m_SizeDelta: {x: -0.9299927, y: -1.7300034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7433056150287726989
 CanvasRenderer:
@@ -256,8 +256,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4440581123507114469}
         m_TargetAssemblyTypeName: PopupShop, Assembly-CSharp
-        m_MethodName: AddArrow
-        m_Mode: 3
+        m_MethodName: Add5Arrow
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -542,8 +542,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4440581123507114469}
         m_TargetAssemblyTypeName: PopupShop, Assembly-CSharp
-        m_MethodName: AddArrow
-        m_Mode: 3
+        m_MethodName: Add30Arrow
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -584,10 +584,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6787683208396464774}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.94907, y: 132}
-  m_SizeDelta: {x: 179.08, y: 78.27}
+  m_AnchorMin: {x: 0.21816336, y: 0.7593435}
+  m_AnchorMax: {x: 0.7878367, y: 0.97487545}
+  m_AnchoredPosition: {x: -0.050933838, y: -0.000015258789}
+  m_SizeDelta: {x: -0.91999817, y: 0.26999664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7823093151449791020
 CanvasRenderer:
@@ -885,8 +885,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4440581123507114469}
         m_TargetAssemblyTypeName: PopupShop, Assembly-CSharp
-        m_MethodName: AddArrow
-        m_Mode: 3
+        m_MethodName: Add20Arrow
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1230,8 +1230,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4440581123507114469}
         m_TargetAssemblyTypeName: PopupShop, Assembly-CSharp
-        m_MethodName: AddArrow
-        m_Mode: 3
+        m_MethodName: Add1Arrow
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1272,10 +1272,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2105568639025791842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1495, y: 134.46527}
-  m_SizeDelta: {x: 178.98, y: 78.27}
+  m_AnchorMin: {x: 0.20966974, y: 0.76322967}
+  m_AnchorMax: {x: 0.78300005, y: 0.9806889}
+  m_AnchoredPosition: {x: -0.14949799, y: -0.034729004}
+  m_SizeDelta: {x: -1.0200043, y: -0.73000336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4052013797045357775
 CanvasRenderer:
@@ -1406,10 +1406,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6545732475810182374}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.0008, y: 136.6}
-  m_SizeDelta: {x: 179.13, y: 78.27}
+  m_AnchorMin: {x: 0.2173468, y: 0.7712077}
+  m_AnchorMax: {x: 0.78900003, y: 0.9916229}
+  m_AnchoredPosition: {x: 0.0008010864, y: 0.1000061}
+  m_SizeDelta: {x: -0.8699951, y: -0.73000336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9174655083188722654
 CanvasRenderer:
@@ -1598,6 +1598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Main: {fileID: 3796880181548978097}
+  Stone_Text: {fileID: 1911448485339444819}
 --- !u!1 &3796880181548978097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,10 +1689,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1007265605686910743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.0816, y: 134.78}
-  m_SizeDelta: {x: 178.92, y: 78.27}
+  m_AnchorMin: {x: 0.21787101, y: 0.7638906}
+  m_AnchorMax: {x: 0.78900003, y: 0.9861095}
+  m_AnchoredPosition: {x: 0.081604004, y: -0.22001648}
+  m_SizeDelta: {x: -1.0800018, y: -1.7300034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8481704252299802390
 CanvasRenderer:
@@ -1912,8 +1913,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4440581123507114469}
         m_TargetAssemblyTypeName: PopupShop, Assembly-CSharp
-        m_MethodName: AddArrow
-        m_Mode: 3
+        m_MethodName: Add15Arrow
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1954,10 +1955,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1872834444977904894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.97339, y: 138.48007}
-  m_SizeDelta: {x: 179, y: 78.27}
+  m_AnchorMin: {x: 0.21216376, y: 0.77076334}
+  m_AnchorMax: {x: 0.78167254, y: 0.99170995}
+  m_AnchoredPosition: {x: 0.026611328, y: 0.48007202}
+  m_SizeDelta: {x: -1, y: -1.7300034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3884549953729176216
 CanvasRenderer:
@@ -2359,8 +2360,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4440581123507114469}
         m_TargetAssemblyTypeName: PopupShop, Assembly-CSharp
-        m_MethodName: AddArrow
-        m_Mode: 3
+        m_MethodName: Add25Arrow
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

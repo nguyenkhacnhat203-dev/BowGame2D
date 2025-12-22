@@ -21,6 +21,7 @@ public class LevelManager : Singleton<LevelManager>
 
 
     public TextMeshProUGUI TextTaget_HitBow;
+    public TextMeshProUGUI TextTaget_HitApple;
     public TextMeshProUGUI TextCountArrow;
     public TextMeshProUGUI Level_Text;
     private void Start()
@@ -49,7 +50,8 @@ public class LevelManager : Singleton<LevelManager>
         );
         remainingArrows = currentLevel.ArrowStart;
 
-        UpdateTargetText();
+        UpdateTargetArrowText();
+        UpdateTargetAppleText();
         UpdateArrowText();
         Debug.Log("Load Level: " + currentLevelIndex);
     }
@@ -58,10 +60,15 @@ public class LevelManager : Singleton<LevelManager>
     {
         CheckWin();
     }
-   public void UpdateTargetText()
+   public void UpdateTargetArrowText()
     {
         if (TextTaget_HitBow == null || currentLevel == null) return;
         TextTaget_HitBow.text = CountBowHit + "/" + currentLevel.HitArrows;
+    }   
+    public void UpdateTargetAppleText()
+    {
+        if (TextTaget_HitApple == null || currentLevel == null) return;
+        TextTaget_HitApple.text = CountAppleHit + "/" + currentLevel.HitApple;
     }
 
     public void UpdateArrowText()
@@ -81,7 +88,7 @@ public class LevelManager : Singleton<LevelManager>
         
 
 
-        if (CountBowHit >= currentLevel.HitArrows)
+        if (CountBowHit >= currentLevel.HitArrows && CountAppleHit>=currentLevel.HitApple)
         {
 
             isCheck = true;
