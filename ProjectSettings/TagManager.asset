@@ -49,3 +49,6 @@ TagManager:
   - name: Arrow
     uniqueID: 1087172469
     locked: 0
+  - name: SceneTransition
+    uniqueID: 850100543
+    locked: 0

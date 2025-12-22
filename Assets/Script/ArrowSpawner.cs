@@ -57,9 +57,9 @@ public class ArrowSpawner : MonoBehaviour
 
     private void FireArrow()
     {
-        if (PopupManager.Instance.isShowPopup == true) return;
 
         if (!canFire || currentArrow == null || CountArrow <= 0) return;
+        if (PopupManager.Instance.isShowPopup == true) return;
 
         canFire = false;
 

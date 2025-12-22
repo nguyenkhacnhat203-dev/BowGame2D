@@ -14,7 +14,7 @@ public class LevelManager : Singleton<LevelManager>
     public int CountAppleHit;
     public int remainingArrows;
 
-    private bool isCheck;
+    public bool isCheck;
 
     private const string LEVEL_KEY = "CURRENT_LEVEL";
     private ArrowSpawner arrowSpawner;
@@ -26,6 +26,12 @@ public class LevelManager : Singleton<LevelManager>
     public TextMeshProUGUI Level_Text;
     private void Start()
     {
+        TextTaget_HitBow = GameObject.Find("TextTaget_HitBow").GetComponent<TextMeshProUGUI>(); 
+        TextTaget_HitApple = GameObject.Find("TextTaget_HitApple").GetComponent<TextMeshProUGUI>();
+        TextCountArrow = GameObject.Find("TextCountArrow").GetComponent<TextMeshProUGUI>();
+        Level_Text = GameObject.Find("Level_Text").GetComponent<TextMeshProUGUI>();
+
+
         currentLevelIndex = PlayerPrefs.GetInt(LEVEL_KEY, 0);
 
         currentLevelIndex = Mathf.Clamp(currentLevelIndex, 0, Levels.Count - 1);
@@ -97,12 +103,12 @@ public class LevelManager : Singleton<LevelManager>
 
             SaveLevelProgress();
 
-            LoadNextLevel();
+            PopupManager.Instance.ShowPopup_Win();
         }
         else
         {
            
-
+            PopupManager.Instance.ShowPopup_Loss();
             isCheck = true;
             Debug.Log("Bạn thua");
         }
@@ -121,7 +127,7 @@ public class LevelManager : Singleton<LevelManager>
         }
     }
 
-    void LoadNextLevel()
+    public void LoadNextLevel()
     {
         currentLevelIndex++;
 
