@@ -702,6 +702,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1861276140421892083, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3278723936528342310, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -726,6 +730,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4109274645464331037, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4466647719482070540, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -736,12 +744,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4466647719482070540, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466647719482070540, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5054015986437129522, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5382510589356068910, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382510589356068910, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382510589356068910, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1124030568}
+    - target: {fileID: 5382510589356068910, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382510589356068910, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowPopup_ShopStone
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382510589356068910, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PopupManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382510589356068910, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5383352754623554130, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -754,6 +794,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5383352754623554130, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7556782554822368398, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -764,6 +808,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7556782554822368398, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556782554822368398, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -771,6 +819,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+--- !u!114 &1190701786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5382510589356068910, guid: da9c0a1ec7c423c478e38ffc097d8332, type: 3}
+  m_PrefabInstance: {fileID: 1190701785}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1869349017
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +925,14 @@ PrefabInstance:
       propertyPath: myButton
       value: 
       objectReference: {fileID: 935594604}
+    - target: {fileID: 3694431075114042354, guid: ec9654a345c39ca47a46d5bf438e6f2b, type: 3}
+      propertyPath: ShopStone
+      value: 
+      objectReference: {fileID: 1190701786}
+    - target: {fileID: 3694431075114042354, guid: ec9654a345c39ca47a46d5bf438e6f2b, type: 3}
+      propertyPath: popup_ShopStone
+      value: 
+      objectReference: {fileID: 4045764586529482131, guid: 65de920a19c06f640b1dd0af1deb5239, type: 3}
     - target: {fileID: 5716306639497795994, guid: ec9654a345c39ca47a46d5bf438e6f2b, type: 3}
       propertyPath: m_Name
       value: 'PopupManager '
