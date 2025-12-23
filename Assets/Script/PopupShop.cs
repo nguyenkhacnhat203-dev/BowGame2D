@@ -28,7 +28,10 @@ public class PopupShop : PopupBase
         DestroyPopup();
 
 #else
-    
+     //AdManager.Instance.ShowRewarded(() =>
+     //   {
+      
+     //   });
 #endif
     }
     public void Add5Arrow()

@@ -72,7 +72,21 @@ public class PopupLoss : PopupBase
         arrowSpawner = FindObjectOfType<ArrowSpawner>();
         arrowSpawner.AddArrow(3);
         LevelManager.Instance.UpdateArrowText();
+
+
 #endif
+        StopTimer();
+
+        AdManager.Instance.ShowRewarded(() =>
+        {
+            LevelManager.Instance.isCheck = false;
+
+            DestroyPopup();
+
+            arrowSpawner = FindObjectOfType<ArrowSpawner>();
+            arrowSpawner.AddArrow(3);
+            LevelManager.Instance.UpdateArrowText();
+        });
     }
 
     public void RevivedLevelBuyStone()
@@ -93,6 +107,7 @@ public class PopupLoss : PopupBase
         arrowSpawner.AddArrow(3);
         LevelManager.Instance.UpdateArrowText();
 #endif
+       
     }
 
     public void ComeHome()
