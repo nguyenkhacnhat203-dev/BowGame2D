@@ -60,12 +60,19 @@ public class PopupWin : PopupBase
 
 #if UNITY_EDITOR
 
+        Transition.Instance.PlayTransition();
         LevelManager.Instance.LoadNextLevel();
         ResourceManager.Instance.AddStoneGreen(rewardGreenStone*2);
         DestroyPopup();
 
 #else
-    
+         AdManager.Instance.ShowRewarded(() =>
+        {
+            Transition.Instance.PlayTransition();
+            LevelManager.Instance.LoadNextLevel();
+            ResourceManager.Instance.AddStoneGreen(rewardGreenStone * 2);
+            DestroyPopup();
+        });
 #endif
     }
 
@@ -75,7 +82,7 @@ public class PopupWin : PopupBase
 
 
 
-
+        Transition.Instance.PlayTransition();
         LevelManager.Instance.LoadNextLevel();
         ResourceManager.Instance.AddStoneGreen(rewardGreenStone);
         DestroyPopup();
@@ -87,7 +94,7 @@ public class PopupWin : PopupBase
 
     public void ComeHome()
     {
-        SceneTransition.Instance.PlayTransition("Home");
+        Transition.Instance.PlayTransitionWithSence("Home");
         DestroyPopup();
     }
 

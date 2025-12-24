@@ -1,19 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UiManager : Singleton<UiManager>
 {
     public List<GameObject> UI_GamePlay;
     public List<GameObject> UI_Home;
-
+    public List<Button> Bt_ADS;
     private Canvas mainCanvas;
 
     protected override void Awake()
     {
         base.Awake();
         mainCanvas = GetComponent<Canvas>();
+        //if (AdManager.Instance.IsNoAds == true)
+        //{
+        //    Debug.Log("hủy ads");
+        //}
+    }
+
+
+    private void Update()
+    {
+        if (AdManager.Instance.IsNoAds == true)
+        {
+            if (AdManager.Instance != null && AdManager.Instance.IsNoAds)
+            {
+                foreach (Button btn in Bt_ADS)
+                {
+                    if (btn != null) btn.gameObject.SetActive(false);
+                }
+
+            }
+            else
+            {
+                foreach (Button btn in Bt_ADS)
+                {
+                    if (btn != null) btn.gameObject.SetActive(true);
+                }
+            }
+        }
     }
 
     private void OnEnable()
@@ -63,6 +91,6 @@ public class UiManager : Singleton<UiManager>
 
     public void NextSenceGame()
     {
-        SceneTransition.Instance.PlayTransition("MainGame");
+        Transition.Instance.PlayTransitionWithSence("MainGame");
     }
 }

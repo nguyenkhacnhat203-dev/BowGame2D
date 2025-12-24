@@ -28,6 +28,12 @@ public class PopupLoss : PopupBase
     {
         Stone_Text.text = ResourceManager.Instance.StoneGreen.ToString();
         Text_Cost.text = Cost.ToString();
+
+        //if (AdManager.Instance.IsNoAds == true)
+        //{
+            
+        //}
+
     }
 
     private void StartTimerToHome()
@@ -74,7 +80,7 @@ public class PopupLoss : PopupBase
         LevelManager.Instance.UpdateArrowText();
 
 
-#endif
+#else
         StopTimer();
 
         AdManager.Instance.ShowRewarded(() =>
@@ -87,33 +93,50 @@ public class PopupLoss : PopupBase
             arrowSpawner.AddArrow(3);
             LevelManager.Instance.UpdateArrowText();
         });
+#endif
     }
+
 
     public void RevivedLevelBuyStone()
     {
-#if UNITY_EDITOR
         if (ResourceManager.Instance.StoneGreen < Cost)
+        {
+            PauseTimer();
+
+            PopupManager.Instance.ShowPopup_ShopStone();
             return;
+        }
 
         StopTimer();
-
         ResourceManager.Instance.UseStoneGreen(Cost);
         Stone_Text.text = ResourceManager.Instance.StoneGreen.ToString();
-
         LevelManager.Instance.isCheck = false;
         DestroyPopup();
-
         arrowSpawner = FindObjectOfType<ArrowSpawner>();
         arrowSpawner.AddArrow(3);
         LevelManager.Instance.UpdateArrowText();
-#endif
-       
+    }
+
+    public void PauseTimer()
+    {
+        if (timerTween != null && timerTween.IsActive())
+        {
+            timerTween.Pause();
+        }
+    }
+
+    public void ResumeTimer()
+    {
+        if (timerTween != null && timerTween.IsActive())
+        {
+            timerTween.Play();
+        }
     }
 
     public void ComeHome()
     {
         StopTimer();
-        SceneTransition.Instance.PlayTransition("Home");
+        Transition.Instance.PlayTransitionWithSence("Home");
         DestroyPopup();
     }
 }
