@@ -2,7 +2,26 @@ public class PopupShopStone : PopupBase
 {
     public void AddStone(int amount)
     {
+
+#if UNITY_EDITOR
+
         ResourceManager.Instance.AddStoneGreen(amount);
+        DestroyPopup();
+
+
+#else
+        
+#endif
+
+
+
+
+
+
+
+
+
+
     }
 
     public override void DestroyPopup()

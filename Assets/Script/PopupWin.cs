@@ -66,6 +66,17 @@ public class PopupWin : PopupBase
         DestroyPopup();
 
 #else
+
+       if(AdManager.Instance.IsNoAds == true) 
+        {
+            Transition.Instance.PlayTransition();
+            LevelManager.Instance.LoadNextLevel();
+            ResourceManager.Instance.AddStoneGreen(rewardGreenStone * 2);
+            DestroyPopup();
+            return;
+
+        }
+
          AdManager.Instance.ShowRewarded(() =>
         {
             Transition.Instance.PlayTransition();

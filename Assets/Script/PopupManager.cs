@@ -16,6 +16,7 @@ public class PopupManager : Singleton<PopupManager>
     public GameObject popup_ShopStone;
     public GameObject popup_Setting;
     public GameObject popup_NoAds;
+    public GameObject popup_BigShop;
 
     [Header("Popup Parent (Canvas)")]
     public Transform popupParent;
@@ -32,6 +33,7 @@ public class PopupManager : Singleton<PopupManager>
     public Button Setting;
     public Button NoAds_Game;
     public Button NoAds_Home;
+    public Button BigShop;
 
 
 
@@ -63,6 +65,9 @@ public class PopupManager : Singleton<PopupManager>
         }  if (NoAds_Home != null)
         {
             AddPointerDownListener(NoAds_Home, () => OnDown());
+        } if (BigShop != null)
+        {
+            AddPointerDownListener(BigShop, () => OnDown());
         }
     }
 
@@ -149,6 +154,11 @@ public class PopupManager : Singleton<PopupManager>
     {
         if (popup_Win == null) return; 
         CreatePopup(popup_NoAds);
+    }
+     public void ShowPopup_BigShop()
+    {
+        if (popup_BigShop == null) return; 
+        CreatePopup(popup_BigShop);
     }
 
     private void CreatePopup(GameObject prefab)

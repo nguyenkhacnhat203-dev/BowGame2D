@@ -64,6 +64,7 @@ GameObject:
   - component: {fileID: 7930957631523940534}
   - component: {fileID: 7182599307017472275}
   - component: {fileID: 3430869138498766288}
+  - component: {fileID: 7232501497711923609}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Wood
@@ -189,6 +190,20 @@ MonoBehaviour:
   speed: 120
   pushDistance: 0.15
   pushDuration: 0.05
+--- !u!114 &7232501497711923609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745266464464438253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f079fa9a9d2fb469d34abfd64ee2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodBasic: {fileID: 21300000, guid: 23986f7c2e9055046bafd6ace99dd054, type: 3}
+  woodOak: {fileID: 21300000, guid: 4a9e7993bf317f44e8262b4099a8f60a, type: 3}
 --- !u!1 &1221549553487813039
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4164153499110897191}
   - component: {fileID: 2962135149607393825}
+  - component: {fileID: 4601686896392963150}
   m_Layer: 0
   m_Name: Bow
   m_TagString: Untagged
@@ -476,6 +492,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4601686896392963150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4751879873196473965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c6e9da5d400adb43b601267d06103bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bowBasic: {fileID: 21300000, guid: 932f5be6dec0c06409226507c2d9e1b5, type: 3}
+  bowGem: {fileID: 21300000, guid: e1bc01eeda10812488cbcc4ee03874ef, type: 3}
 --- !u!1 &8400886891365136332
 GameObject:
   m_ObjectHideFlags: 0

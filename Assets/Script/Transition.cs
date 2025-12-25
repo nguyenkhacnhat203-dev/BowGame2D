@@ -20,7 +20,7 @@ public class Transition : Singleton<Transition>
 
         Sequence seq = DOTween.Sequence();
 
-        seq.Append(t.DOScale(32f, 0.5f).SetEase(Ease.OutBack));
+        seq.Append(t.DOScale(32f, 0.65f).SetEase(Ease.OutBack));
 
         seq.AppendCallback(() =>
         {
@@ -36,9 +36,9 @@ public class Transition : Singleton<Transition>
             SceneManager.LoadScene(sceneName);
         });
 
-        seq.AppendInterval(0.05f);
+        seq.AppendInterval(0.01f);
 
-        seq.Append(t.DOScale(0f, 0.5f).SetEase(Ease.InBack));
+        seq.Append(t.DOScale(0f, 0.65f).SetEase(Ease.InBack));
 
         seq.OnComplete(() =>
         {
@@ -63,11 +63,11 @@ public class Transition : Singleton<Transition>
 
         Sequence seq = DOTween.Sequence();
 
-        seq.Append(t.DOScale(32f, 0.5f).SetEase(Ease.OutBack));
+        seq.Append(t.DOScale(32f, 0.65f).SetEase(Ease.OutBack));
 
-        seq.AppendInterval(0.05f);
+        seq.AppendInterval(0.01f);
 
-        seq.Append(t.DOScale(0f, 0.5f).SetEase(Ease.InBack));
+        seq.Append(t.DOScale(0f, 0.65f).SetEase(Ease.InBack));
 
         seq.OnComplete(() =>
         {

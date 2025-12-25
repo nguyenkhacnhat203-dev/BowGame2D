@@ -81,7 +81,25 @@ public class PopupLoss : PopupBase
 
 
 #else
+
+
+
         StopTimer();
+
+
+         if(AdManager.Instance.IsNoAds == true) 
+        {
+            LevelManager.Instance.isCheck = false;
+
+            DestroyPopup();
+
+            arrowSpawner = FindObjectOfType<ArrowSpawner>();
+            arrowSpawner.AddArrow(3);
+            LevelManager.Instance.UpdateArrowText();
+            return;
+
+        }
+
 
         AdManager.Instance.ShowRewarded(() =>
         {

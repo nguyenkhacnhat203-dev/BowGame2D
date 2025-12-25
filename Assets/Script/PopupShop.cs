@@ -1,6 +1,6 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-
+using System.Collections;
 public class PopupShop : PopupBase
 {
     private ArrowSpawner arrowSpawner;
@@ -27,11 +27,34 @@ public class PopupShop : PopupBase
         LevelManager.Instance.UpdateArrowText();
         DestroyPopup();
 
+
+
+
+
 #else
-     //AdManager.Instance.ShowRewarded(() =>
-     //   {
-      
-     //   });
+        if(AdManager.Instance.IsNoAds == true) 
+        {
+            Cost = 0;
+            amount = 1;
+
+            arrowSpawner = FindObjectOfType<ArrowSpawner>();
+            arrowSpawner.AddArrow(amount);
+            LevelManager.Instance.UpdateArrowText();
+            DestroyPopup();
+            return;
+
+        }
+
+        AdManager.Instance.ShowRewarded(() =>
+        {
+        Cost = 0;
+        amount = 1;
+
+        arrowSpawner = FindObjectOfType<ArrowSpawner>();
+        arrowSpawner.AddArrow(amount);
+        LevelManager.Instance.UpdateArrowText();
+        DestroyPopup();
+       });
 #endif
     }
     public void Add5Arrow()
@@ -71,6 +94,7 @@ public class PopupShop : PopupBase
         }
         else
         {
+
             return;
         }
         amount = 15;
@@ -101,6 +125,7 @@ public class PopupShop : PopupBase
         }
         else
         {
+
             return;
         }
         amount = 20;
@@ -127,6 +152,7 @@ public class PopupShop : PopupBase
         }
         else
         {
+
             return;
         }
         amount = 30;
@@ -155,6 +181,7 @@ public class PopupShop : PopupBase
         }
         else
         {
+
             return;
         }
         amount = 25;
@@ -172,10 +199,7 @@ public class PopupShop : PopupBase
 
 
 
-
-
-
-
+  
 
 
 
