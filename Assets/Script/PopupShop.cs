@@ -19,15 +19,37 @@ public class PopupShop : PopupBase
     public void Add1Arrow()
     {
 #if UNITY_EDITOR
-        Cost = 0;
-        amount = 1;
+        //Cost = 0;
+        //amount = 1;
 
-        arrowSpawner = FindObjectOfType<ArrowSpawner>();
-        arrowSpawner.AddArrow(amount);
-        LevelManager.Instance.UpdateArrowText();
-        DestroyPopup();
+        //arrowSpawner = FindObjectOfType<ArrowSpawner>();
+        //arrowSpawner.AddArrow(amount);
+        //LevelManager.Instance.UpdateArrowText();
+        //DestroyPopup();
 
+        if (AdManager.Instance.IsNoAds == true)
+        {
+            Cost = 0;
+            amount = 1;
 
+            arrowSpawner = FindObjectOfType<ArrowSpawner>();
+            arrowSpawner.AddArrow(amount);
+            LevelManager.Instance.UpdateArrowText();
+            DestroyPopup();
+            return;
+
+        }
+
+        AdManager.Instance.ShowRewarded(() =>
+        {
+            Cost = 0;
+            amount = 1;
+
+            arrowSpawner = FindObjectOfType<ArrowSpawner>();
+            arrowSpawner.AddArrow(amount);
+            LevelManager.Instance.UpdateArrowText();
+            DestroyPopup();
+        });
 
 
 

@@ -584,6 +584,9 @@ MonoBehaviour:
   Levels:
   - {fileID: 6353217298838746350, guid: 603700c238443e94b8be58a8c8fddaa8, type: 3}
   - {fileID: 3728646854834092576, guid: 23c494efab6672546a185a73eebfae3d, type: 3}
+  - {fileID: 3505822044885881465, guid: a26d942b3fa685a488caffa44cd9f916, type: 3}
+  - {fileID: 7989081026466399019, guid: 8d153e12f715cc742987b40fd60c83ff, type: 3}
+  - {fileID: 5885746528981078021, guid: 5179babc35ae61b4bae00e0cae6653b7, type: 3}
   levelParent: {fileID: 599131693}
   currentLevelIndex: 0
   CountBowHit: 0
@@ -1974,6 +1977,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3657658293167737165, guid: ba8f661e5da79b1419679885217a02b4, type: 3}
+      propertyPath: backgroundMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f93938937d0bcd048ba288a103bb041d, type: 3}
+    - target: {fileID: 3657658293167737165, guid: ba8f661e5da79b1419679885217a02b4, type: 3}
+      propertyPath: soundEffectsClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3657658293167737165, guid: ba8f661e5da79b1419679885217a02b4, type: 3}
+      propertyPath: soundEffectsClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0731e8c62ee875d41802ee729ff7aca7, type: 3}
+    - target: {fileID: 3657658293167737165, guid: ba8f661e5da79b1419679885217a02b4, type: 3}
+      propertyPath: soundEffectsClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 15fd2821e20f3f3409fbb16ae65c544f, type: 3}
+    - target: {fileID: 3657658293167737165, guid: ba8f661e5da79b1419679885217a02b4, type: 3}
+      propertyPath: soundEffectsClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: dd10c54bc8ec22e4ba75ea35de9dcc43, type: 3}
     - target: {fileID: 7589146726498778232, guid: ba8f661e5da79b1419679885217a02b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

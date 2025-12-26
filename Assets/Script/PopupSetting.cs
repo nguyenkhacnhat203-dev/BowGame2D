@@ -34,16 +34,18 @@ public class PopupSetting : PopupBase
     #region BUTTON EVENTS
     public void ToggleSound()
     {
+        AudioManager.Instance.BtnClick();
         isSoundOn = !isSoundOn;
         PlayerPrefs.SetInt("Sound", isSoundOn ? 1 : 0);
 
         AudioManager.Instance.AdjustSoundEffectsVolume(isSoundOn ? 1f : 0f);
         UpdateUI();
-        AudioManager.Instance.PlayBtn();
     }
 
     public void ToggleMusic()
     {
+        AudioManager.Instance.BtnClick();
+
         isMusicOn = !isMusicOn;
         PlayerPrefs.SetInt("Music", isMusicOn ? 1 : 0);
 
@@ -53,6 +55,8 @@ public class PopupSetting : PopupBase
 
     public void ToggleVibrate()
     {
+        AudioManager.Instance.BtnClick();
+
         isVibrateOn = !isVibrateOn;
         PlayerPrefs.SetInt("Vibrate", isVibrateOn ? 1 : 0);
 

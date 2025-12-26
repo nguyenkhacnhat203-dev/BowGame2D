@@ -37,6 +37,8 @@ public abstract class PopupBase : MonoBehaviour
 
     public virtual void DestroyPopup()
     {
+        AudioManager.Instance.BtnClick();
+
         if (Main == null)
         {
             Destroy(gameObject);

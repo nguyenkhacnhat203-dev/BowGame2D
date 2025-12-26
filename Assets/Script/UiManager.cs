@@ -91,6 +91,7 @@ public class UiManager : Singleton<UiManager>
 
     public void NextSenceGame()
     {
+        AudioManager.Instance.BtnClick();
         Transition.Instance.PlayTransitionWithSence("MainGame");
     }
 }

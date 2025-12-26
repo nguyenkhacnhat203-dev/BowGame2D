@@ -500,9 +500,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cec0ba13cb8e904880d5b5a4b16a16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrowStart: 15
+  ArrowStart: 10
   woodRotateCase: 1
-  HitArrows: 15
+  HitArrows: 10
   HitApple: 0
   arrowSpawner: {fileID: 5589863003142709046}
   wood: {fileID: 1571807191028306951}

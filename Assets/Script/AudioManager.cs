@@ -35,9 +35,10 @@ public class AudioManager : Singleton<AudioManager>
         }
     }
 
-    public void PlayDrop() => PlaySoundEffect(0);
-    public void PlayMerge() => PlaySoundEffect(1);
-    public void PlayBtn() => PlaySoundEffect(2);
+    public void HitWood() => PlaySoundEffect(0);
+    public void HitArrow() => PlaySoundEffect(1);
+    public void BtnClick() => PlaySoundEffect(2);
+   
 
 
 

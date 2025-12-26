@@ -69,6 +69,12 @@ public class PopupManager : Singleton<PopupManager>
         {
             AddPointerDownListener(BigShop, () => OnDown());
         }
+
+        parentCanvas = GetComponent<Canvas>();
+
+
+
+
     }
 
 
@@ -110,7 +116,7 @@ public class PopupManager : Singleton<PopupManager>
 
     private void UpdateCamera()
     {
-        if (parentCanvas != null && parentCanvas.renderMode == RenderMode.ScreenSpaceCamera)
+        if (parentCanvas != null)
         {
             parentCanvas.worldCamera = Camera.main;
         }
@@ -163,6 +169,7 @@ public class PopupManager : Singleton<PopupManager>
 
     private void CreatePopup(GameObject prefab)
     {
+        AudioManager.Instance.BtnClick();
         isShowPopup = true;
         GameObject popup = Instantiate(prefab, popupParent);
         popup.SetActive(true);

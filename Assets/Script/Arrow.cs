@@ -51,7 +51,7 @@ public class Arrow : MonoBehaviour
             StickToWood(collision.transform);
             LevelManager.Instance.CountBowHit++;
             LevelManager.Instance.UpdateTargetArrowText();
-
+            AudioManager.Instance.HitWood();
         }
         else if (collision.gameObject.CompareTag("Arrow"))
         {
@@ -59,6 +59,7 @@ public class Arrow : MonoBehaviour
             Vector2 incomingVelocity = rb.velocity;
             Vector2 hitNormal = collision.contacts[0].normal;
             FlyOut(incomingVelocity, hitNormal);
+            AudioManager.Instance.HitArrow();
 
         }
     }

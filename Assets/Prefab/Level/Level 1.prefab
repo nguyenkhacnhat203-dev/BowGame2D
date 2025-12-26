@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cec0ba13cb8e904880d5b5a4b16a16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrowStart: 10
+  ArrowStart: 5
   woodRotateCase: 0
-  HitArrows: 10
+  HitArrows: 5
   HitApple: 0
   arrowSpawner: {fileID: 2637714489009832209}
   wood: {fileID: 3430869138498766288}

@@ -455,7 +455,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1895106815449888614}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6534074992970261754}
+        m_TargetAssemblyTypeName: PopupBigShop, Assembly-CSharp
+        m_MethodName: BuyCombo1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &348728550427606246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,7 +1215,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5806424791530319344}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6534074992970261754}
+        m_TargetAssemblyTypeName: PopupBigShop, Assembly-CSharp
+        m_MethodName: BuyCombo2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1395754455558616249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,18 +3704,23 @@ MonoBehaviour:
   tickBowGem: {fileID: 560740579699158563}
   greenStoneBowGem: {fileID: 5584910998391625005}
   priceBowGem: 500
+  BowGem_Text: {fileID: 5345850263542745569}
   ArrowBasic: {fileID: 1355283983964294691}
   tickArrowBasic: {fileID: 122194981198518694}
   ArrowPoison: {fileID: 3890886110661727704}
   tickArrowPoison: {fileID: 5652542531570458135}
   greenStoneArrowPoison: {fileID: 1062626446599147209}
   priceArrowPoison: 300
+  ArrowPoison_Text: {fileID: 7685193007659505391}
   WoodBasic: {fileID: 6185121424188487194}
   tickWoodBasic: {fileID: 2074806559397962055}
   WoodOakPoison: {fileID: 1726198356115426859}
   tickWoodOakPoison: {fileID: 2720690306099613844}
   greenStoneWoodOakPoison: {fileID: 7154404637630584533}
   priceWoodOak: 400
+  WoodOak_Text: {fileID: 8680640072206283103}
+  Combo1: {fileID: 7544146620765848878}
+  Combo2: {fileID: 5356160498003495048}
 --- !u!1 &5202340252602421524
 GameObject:
   m_ObjectHideFlags: 0
@@ -6213,7 +6242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15200001, y: 0.51500005}
   m_AnchorMax: {x: 0.30351618, y: 0.744}
-  m_AnchoredPosition: {x: -0.100006126, y: 0}
+  m_AnchoredPosition: {x: -0.10000614, y: 0}
   m_SizeDelta: {x: -1, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1629440731602477992
