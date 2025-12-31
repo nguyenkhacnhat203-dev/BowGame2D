@@ -49,8 +49,11 @@ MonoBehaviour:
   _dontDestroyOnLoad: 1
   backgroundMusicSource: {fileID: 6475147859737907152}
   soundEffectSource: {fileID: 6015119624521408728}
-  backgroundMusicClip: {fileID: 0}
-  soundEffectsClips: []
+  backgroundMusicClip: {fileID: 8300000, guid: f93938937d0bcd048ba288a103bb041d, type: 3}
+  soundEffectsClips:
+  - {fileID: 8300000, guid: 0731e8c62ee875d41802ee729ff7aca7, type: 3}
+  - {fileID: 8300000, guid: 15fd2821e20f3f3409fbb16ae65c544f, type: 3}
+  - {fileID: 8300000, guid: dd10c54bc8ec22e4ba75ea35de9dcc43, type: 3}
 --- !u!1 &6028194858456854969
 GameObject:
   m_ObjectHideFlags: 0

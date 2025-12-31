@@ -119,6 +119,16 @@ MonoBehaviour:
   popup_Shop: {fileID: 3523528129442005633, guid: 3a84077b767b85b4f9cda888057aeaae, type: 3}
   popup_Loss: {fileID: 899122948464283679, guid: 3dc0e0e70f1c965438a0bb6d110127e6, type: 3}
   popup_Win: {fileID: 5468796298105611053, guid: 774922a9b3e9db84b8d999b1f02f2234, type: 3}
+  popup_ShopStone: {fileID: 4045764586529482131, guid: 65de920a19c06f640b1dd0af1deb5239, type: 3}
+  popup_Setting: {fileID: 8041078415282084285, guid: bf2c1af86793f7244ad98c370b8ace9c, type: 3}
+  popup_NoAds: {fileID: 534230596024203339, guid: 6722c8ef81b5f4f4ba402a383fd50977, type: 3}
+  popup_BigShop: {fileID: 5000265757846984441, guid: de697ae3784288e469a2f532bc5866ca, type: 3}
   popupParent: {fileID: 6427193053728389476}
   isShowPopup: 0
-  myButton: {fileID: 0}
+  Pause: {fileID: 0}
+  Shop: {fileID: 0}
+  ShopStone: {fileID: 0}
+  Setting: {fileID: 0}
+  NoAds_Game: {fileID: 0}
+  NoAds_Home: {fileID: 0}
+  BigShop: {fileID: 0}
