@@ -466,6 +466,7 @@ MonoBehaviour:
   - {fileID: 3505822044885881465, guid: a26d942b3fa685a488caffa44cd9f916, type: 3}
   - {fileID: 7989081026466399019, guid: 8d153e12f715cc742987b40fd60c83ff, type: 3}
   - {fileID: 5885746528981078021, guid: 5179babc35ae61b4bae00e0cae6653b7, type: 3}
+  - {fileID: 551972851352955947, guid: 21287f24749fbd4408e16808bf654117, type: 3}
   levelParent: {fileID: 599131693}
   currentLevelIndex: 0
   CountBowHit: 0

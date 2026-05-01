@@ -9,7 +9,8 @@ public class Wood : MonoBehaviour
         Case2, // Phải -> Trái cố định
         Case3, // Quay 1 vòng rồi đổi chiều
         Case4, // 3s đổi chiều quay + speed random
-        Case5  // 2–5s đổi chiều quay + speed random
+        Case5, // 2–5s đổi chiều quay + speed random
+        Case6 // mỗi 2-5s xoay nhanh trong khoảng thời gian random 0.2-1s 
     }
 
     [Header("Rotate Setting")]
@@ -53,6 +54,9 @@ public class Wood : MonoBehaviour
             case RotateCase.Case5:
                 StartCoroutine(RandomDirectionRandomTime());
                 break;
+            case RotateCase.Case6:
+                StartCoroutine(RandomSpeedRandomTime());
+                break;
         }
     }
 
@@ -71,6 +75,9 @@ public class Wood : MonoBehaviour
 
             case RotateCase.Case4:
             case RotateCase.Case5:
+                RotateWood(direction, currentSpeed);
+                break;
+            case RotateCase.Case6:
                 RotateWood(direction, currentSpeed);
                 break;
         }
@@ -110,6 +117,17 @@ public class Wood : MonoBehaviour
         {
             direction = Random.value > 0.5f ? 1 : -1;
             currentSpeed = Random.Range(speed, speed * 2.5f);
+            yield return new WaitForSeconds(Random.Range(2f, 5f));
+        }
+    }
+
+    IEnumerator RandomSpeedRandomTime()
+    {
+        while (true)
+        {
+            currentSpeed = Random.Range(speed * 2, speed * 3f);
+            yield return new WaitForSeconds(Random.Range(0.2f, 1f));
+            currentSpeed = speed;
             yield return new WaitForSeconds(Random.Range(2f, 5f));
         }
     }
